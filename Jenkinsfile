@@ -12,7 +12,7 @@ pipeline {
      }
     stage('stage 2') {
       steps {
-        echo 'docker push docker.io/tejaswinidockerhub/frontend'
+        sh 'docker push docker.io/tejaswinidockerhub/frontend'
       }
     }
   }
