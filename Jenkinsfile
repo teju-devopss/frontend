@@ -7,12 +7,12 @@ pipeline {
   stages {
     stage('Docker build') {
      steps {
-       sh 'docker build -t tejaswinidockerhub/frontend .'
+       sh 'docker build -t docker.io/tejaswinidockerhub/frontend .'
        }
      }
     stage('stage 2') {
       steps {
-        echo 'docker push tejaswinidockerhub/frontend'
+        echo 'docker push docker.io/tejaswinidockerhub/frontend'
       }
     }
   }
